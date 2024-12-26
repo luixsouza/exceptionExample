@@ -1,18 +1,26 @@
-## Getting Started
+# Tratamento de Exceções em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto foi desenvolvido para demonstrar o uso de **tratamento de exceções** em Java. Ele simula um sistema de reservas de quartos, lidando com entradas inválidas e regras de domínio.
 
-## Folder Structure
+## Funcionalidades
 
-The workspace contains two folders by default, where:
+- Criar uma reserva informando número do quarto, check-in e check-out.
+- Atualizar as datas de uma reserva existente.
+- Tratar os seguintes erros:
+  - Formato de data inválido (`ParseException`).
+  - Regras de domínio violadas, como datas inconsistentes (`DomainException`).
+  - Erros inesperados (`RuntimeException`).
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Tecnologias
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Java
+- SimpleDateFormat
+- Scanner
+- Exceções personalizadas (`DomainException`)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Objetivo
+Este projeto foi criado para fins de aprendizado, destacando:
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Uso de exceções personalizadas.
+- Validação de regras de negócio.
+- Tratamento de erros comuns em aplicações Java.
